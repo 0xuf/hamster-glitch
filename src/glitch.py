@@ -31,7 +31,7 @@ def perform_hamster_glitch():
         'timestamp': int(str(datetime.now().timestamp()).split(".")[0])
     }
 
-    post('http://api.hamsterkombat.io/clicker/tap', headers=headers, json=json_data, proxies={"http": "http://127.0.0.1:8080"})
+    post('https://api.hamsterkombat.io/clicker/tap', headers=headers, json=json_data)
 
 if __name__ == "__main__":
     while True:
